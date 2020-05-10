@@ -10,6 +10,10 @@ nav a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.section {
+  min-height: 100vh;
+}
+
 #landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,9 +51,10 @@ nav a {
   position: relative;
   top: 0;
   left: 0;
-  border: solid 2px white;
+  outline: solid 2px white;
   z-index: 2;
   max-height: 450px;
+  max-width: 375px;
 }
 
 #landing #landing-content img::before {
@@ -72,5 +77,107 @@ nav a {
   color: #121213;
   z-index: 1 !important;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+#landing #cta-wrapper {
+  position: absolute;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#landing #cta-wrapper:hover {
+  cursor: pointer;
+}
+
+#landing #cta-arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+#about {
+  position: relative;
+}
+
+#about #about-wrapper {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 0;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 2vh 0;
+}
+
+#about #about-wrapper h2 {
+  font-variant: small-caps;
+}
+
+#about #about-wrapper .grid-item {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  padding: 5vh 0;
+}
+
+#about #personal {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+#about #experience {
+  text-align: right;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+#about #experience .year {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .8rem;
+}
+
+#about #skills {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+#about #skills #skills-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#about #skills #skills-list li {
+  margin: 0 1vw;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=index.css.map */
