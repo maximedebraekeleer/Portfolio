@@ -127,6 +127,7 @@ nav a {
 
 #about #about-wrapper h2 {
   font-variant: small-caps;
+  padding: 0;
 }
 
 #about #about-wrapper .grid-item {
@@ -140,6 +141,10 @@ nav a {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
+}
+
+#about #personal p {
+  display: inline-block;
 }
 
 #about #experience {
@@ -179,5 +184,57 @@ nav a {
 #about #skills #skills-list li {
   margin: 0 1vw;
   font-size: 1.1rem;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects h2 {
+  margin: 10vh 0;
+}
+
+#projects hr {
+  background: rgba(255, 255, 255, 0.1);
+  width: 70%;
+}
+
+#projects .project-name {
+  font-variant: small-caps;
+  margin: 0;
+}
+
+#projects .project-type {
+  display: inline-block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .8rem;
+}
+
+#projects .project-tech {
+  font-size: 1.1rem;
+}
+
+#projects .project-tech-ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 100%;
+  margin-top: 3vh;
+}
+
+#projects .project-tech-ul li {
+  margin: 0 20px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=index.css.map */

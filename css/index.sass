@@ -90,12 +90,15 @@ nav
         padding: 2vh 0
         h2
             font-variant: small-caps
+            padding: 0
         .grid-item
             display: inline-grid
             padding: 5vh 0
     #personal
         grid-column: 1
         grid-row: 1
+        p
+            display: inline-block
     #experience
         text-align: right
         grid-column: 2
@@ -115,3 +118,35 @@ nav
             li
                 margin: 0 1vw
                 font-size: 1.1rem
+
+#projects
+    text-align: center 
+    h2
+        margin: 10vh 0
+    hr
+        background: rgba(255,255,255,.1)
+        width: 70%              
+    .project-name
+        font-variant: small-caps
+        margin: 0
+    .project-type
+        display: inline-block
+        width: 100%
+        color: rgba(255,255,255,.5)
+        font-size: .8rem
+    .project-tech
+        font-size: 1.1rem
+    .project-tech-ul
+        list-style: none
+        display: flex
+        justify-content: center
+        padding: 0
+        width: 100%
+        margin-top: 3vh
+        li
+            margin: 0 20px  
+    a
+        text-decoration: none
+        color: white
+        font-size: 2rem
+    
