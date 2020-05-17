@@ -211,6 +211,10 @@ nav a {
   font-size: .8rem;
 }
 
+#projects .project-desc {
+  min-height: 15vh;
+}
+
 #projects .project-tech {
   font-size: 1.1rem;
 }
