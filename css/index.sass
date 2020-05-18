@@ -10,7 +10,7 @@ nav
         font-family: Arial, Helvetica, sans-serif
     
 .section
-    min-height: 100vh
+    min-height: 100vh !important
 
 #landing
     display: flex   
@@ -106,9 +106,17 @@ nav
         .year
             color: rgba(255,255,255,.5)
             font-size: .8rem
+    #socials
+        grid-column: 1 / span 2
+        grid-row: 2    
+        text-align: center
+        font-size: 2.5rem
+        a
+            margin: 0 1vw    
+            color: white
     #skills
         grid-column: 1 / span 2
-        grid-row: 2
+        grid-row: 3
         text-align: center
         #skills-list
             list-style: none
@@ -135,7 +143,7 @@ nav
         color: rgba(255,255,255,.5)
         font-size: .8rem
     .project-desc
-        min-height: 15vh
+        min-height: 17.5vh
     .project-tech
         font-size: 1.1rem
     .project-tech-ul
@@ -152,3 +160,14 @@ nav
         color: white
         font-size: 2rem
     
+#contact
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding-top: 45vh
+    span
+        font-variant: small-caps
+        font-weight: bolder
+    a
+        color: white
+        text-decoration: underline
