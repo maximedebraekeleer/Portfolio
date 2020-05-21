@@ -258,6 +258,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -310,6 +312,7 @@ nav a {
   }
   #about-wrapper {
     display: block !important;
+    background: red;
   }
   #socials {
     width: 100%;
@@ -337,10 +340,14 @@ nav a {
 
 @media only screen and (max-width: 576px) {
   .banner {
-    font-size: 2rem !important;
+    font-size: 1.9rem !important;
   }
   #about-wrapper {
-    margin: 25vh;
+    margin: 25vh 0;
+    width: 100%;
+  }
+  #about-wrapper #experience {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
