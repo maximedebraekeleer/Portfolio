@@ -81,7 +81,6 @@ nav a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  color: red;
 }
 
 #landing #landing-content #text-wrapper {
@@ -312,7 +311,6 @@ nav a {
   }
   #about-wrapper {
     display: block !important;
-    background: red;
   }
   #socials {
     width: 100%;
