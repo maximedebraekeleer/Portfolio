@@ -1,26 +1,36 @@
+html
+    scroll-behavior: smooth
+
 body
     background-color: #121213
     color: white
 
 nav
+    width: 100% !important
+    ul
+        display: flex 
+        list-style: none
     a
         text-decoration: none
         color: white !important
         font-variant: small-caps
         font-family: Arial, Helvetica, sans-serif
     
+
 .section
     min-height: 100vh !important
+    display: block
 
 #landing
     display: flex   
     justify-content: center
+    margin: 0 auto
     #landing-content
         margin-top: 15vh
-        position: relative
         display: inline-block
-        height: 450px
-        width: 375px
+        
+        #banner-wrapper
+            position: relative
         .banner
             font-family: Arial, Helvetica, sans-serif
             font-variant: small-caps
@@ -41,13 +51,13 @@ nav
             left: 0
             outline: solid 2px white
             z-index: 2
-            max-height: 450px
-            max-width: 375px
+            height: auto
+            width: 100%
         img::before
             content: "maxime de braekeleer"    
             display: block
             width: 100%
-            height: 500px
+            height: 100%
             overflow: hidden
             color: red
         #text-wrapper
@@ -64,6 +74,9 @@ nav
         bottom: 5%
         display: flex
         flex-direction: column
+        a
+            color: white
+            text-decoration: none
     #cta-wrapper:hover
         cursor: pointer
     #cta-arrow
@@ -78,7 +91,7 @@ nav
         margin: 0 auto
     
 #about
-    position: relative
+    
     #about-wrapper
         position: absolute
         display: grid
@@ -171,3 +184,45 @@ nav
     a
         color: white
         text-decoration: underline
+
+@media only screen and (max-width: 768px)   
+    .banner
+        font-size: 3rem !important
+
+    #cta-wrapper
+        display: none !important
+
+    #about
+        margin-top: 30vh
+    #about-wrapper
+        display: block !important
+
+    #socials
+        width: 100%
+
+    #skills
+        text-align: left !important
+        ul
+            display: block !important
+            padding: 0
+            li
+                margin: 0 !important
+
+    #projects
+        margin-top: 50vh !important
+
+    .row
+        display: block !important
+
+    .project
+        margin: 10vh auto !important
+
+@media only screen and (max-width: 576px)
+    .banner
+        font-size: 2rem !important
+    
+    #about-wrapper
+        margin: 25vh
+    
+
+    
